@@ -1,17 +1,16 @@
-import Cifra_node
+import Cifra_Decifra_Vigenere
 
-def main():
-    opcao = input("Escolha uma opção:\n1. Cifrar mensagem\n2. Decifrar mensagem\nDigite o número da opção desejada: ")
-    chave = input("Digite a chave: ")
-    mensagem = input("Digite a mensagem: ")
+def main():        
+    chave = input("Digite a chave: ")                                       # Solicita a chave ao usuário.    
+    mensagem = input("Digite a mensagem: ")                                 # Solicita a mensagem ao usuário.    
+                  
+    cifra = Cifra_Decifra_Vigenere.Cifra_e_Decifra_de_Vigenere(chave)       # Cria o objeto da Cifra de Vigenère.
+    mensagem_cifrada = cifra.cifragem(mensagem)                             # Realiza a cifragem da mensagem.    
+    print("\nMensagem cifrada:", mensagem_cifrada)                          # Mostra a mensagem cifrada.
 
-    cifra = Cifra_node.Cifra_de_Vigenere(chave)
-    if opcao == "1":
-        print("Mensagem cifrada:", cifra.cifragem(mensagem))
-    elif opcao == "2":
-        print("Mensagem original:", cifra.decifragem(mensagem))
-    else:
-        print("Opção inválida.")
+    mensagem_decifrada = cifra.decifragem(mensagem_cifrada)                 # Realiza a decifragem do criptograma.    
+    print("Mensagem decifrada:", mensagem_decifrada)                        # Mostra a mensagem recuperada.
+
 
 if __name__ == "__main__":
     main()
