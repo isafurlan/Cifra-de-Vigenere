@@ -2,7 +2,7 @@
 
 Implementação própria da Cifra de Vigenère em Python, com cifração e decifração de mensagens a partir de uma chave textual.
 
-Projeto desenvolvido como **Trabalho 1** da disciplina **CIC0201 - Segurança Computacional**, da Universidade de Brasília (UnB). 🎓
+Projeto desenvolvido como **Trabalho 1** da disciplina **CIC0201 - Segurança Computacional**, da Universidade de Brasília (UnB). 
 
 ## ✨ Funcionalidades
 
@@ -57,6 +57,11 @@ Mensagem cifrada: QSA HYPKO
 Mensagem decifrada: OLA MUNDO
 ```
 
-## 👩‍💻 Autora
+## 👩‍💻 Desenvolvido por
 
-Laíssa Soares
+- Érica Feitosa 
+- Isabela Soares
+- Karina 
+- Laíssa Soares
+
+Estudantes do CiC - UnB.
